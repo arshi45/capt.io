@@ -1,0 +1,63 @@
+.generate{
+    background-image: url(../public/images/Rectangle.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    text-align: center;
+    flex-direction:column;
+    align-items: center;
+    justify-content: space-evenly;
+    color:#898888
+}
+
+.generate h1{
+    margin: 0;
+    color:white;
+    font-size:4rem;
+}
+
+.inputBox{
+    height: 60vh;
+    background-color: white;
+    border-radius: 8px;
+    width: 80vw;
+    padding: 4vw;
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.inputBox button{
+  margin: none;
+  background-color: #5CC793;
+  border-style:none;
+  font-size:2rem;
+  padding:8px 40px;
+  border-radius:8px;
+  color:white;
+  cursor:pointer;
+}
+
+.inputBox p{
+    font-size:2.5rem;
+}
+
+.inputBox img{
+    width: 35%;
+    margin: auto;
+}
+
+.inputBox input{
+    display: none;
+}
+.inputBox label:hover{
+    cursor: pointer;
+}
+
+.bar{
+    width: 2px;
+    background-color: #CCCCCC;
+    height: 50vh;
+}

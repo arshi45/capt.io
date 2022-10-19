@@ -1,0 +1,19 @@
+.footer{
+    display: flex;
+    flex-direction:row;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 2rem;
+}
+.footer p{
+    font-size: 1rem;
+}
+
+.footer h1{
+    text-decoration: underline;
+}
+
+.footer h3{
+    font-size:1.5rem;
+}
+
