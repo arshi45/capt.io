@@ -2,6 +2,7 @@ import styles from '../styles/Home.module.css'
 import Footer from './footer'
 import Link from 'next/link'
 import Nav from '../components/navbar'
+import Image from 'next/image'
 
 export default function Home() {
 
@@ -16,8 +17,8 @@ export default function Home() {
           <p>Create meaningful and memorable stories with your photos</p>
           <Link href="generate"><button>Generate</button></Link>
         </div>
-        <img src="images/cuate.png"/>
-        </div>
+        <img src="/images/cuate.png" alt='sideImage'/>
+        </div> 
         </div>
       </section>
       <section className={`${styles.working} ${styles.base}`}>
@@ -30,19 +31,19 @@ export default function Home() {
         <h1>Our Team</h1>
         <div className={styles.names}>
         <div className={styles.photo}>
-          <img/>
+          <Image alt='Anubhav'/>
           <p>Anubhav Chawla</p>
         </div>
         <div className={styles.photo}>
-          <img/>
+          <Image alt='Arshdeep'/>
           <p>Arshdeep Singh</p>
         </div>
         <div className={styles.photo}>
-          <img/>
+          <Image alt='Gurnoor'/>
           <p>Gurnoor Singh</p>
         </div>
         <div className={styles.photo}>
-          <img/>
+          <Image alt='Nikhil'/>
           <p>Nikhil Bakshi</p>
         </div>
         </div>

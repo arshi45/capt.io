@@ -4,6 +4,7 @@ import storage from "../firebase/db"
 import {ref} from "firebase/storage"
 import { useState } from "react"
 import { uploadBytes } from "firebase/storage"
+import Image from "next/image"
 
 const Generate = () => {
 
@@ -30,7 +31,7 @@ const Generate = () => {
             </div>
             <div className={styles.inputBox}>
                 <div style={{padding:0}}>
-                    <label for="upload-file"><img src="images/upload.svg"/></label>
+                    <label for="upload-file"><img src="images/upload.svg" alt="Upload"/></label>
                     <input id="upload-file" type="file" accept=".jpg,.jpeg,.png" onChange={handleChange}></input>
                     {message?<p>{name.name}</p>:<p>Upload your photo</p>}
                 </div>
