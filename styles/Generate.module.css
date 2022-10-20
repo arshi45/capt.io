@@ -11,6 +11,10 @@
     color:#898888
 }
 
+.generate p{
+    font-size:2.5rem;
+}
+
 .generate h1{
     margin: 0;
     color:white;
@@ -38,10 +42,6 @@
   border-radius:8px;
   color:white;
   cursor:pointer;
-}
-
-.inputBox p{
-    font-size:2.5rem;
 }
 
 .inputBox img{
