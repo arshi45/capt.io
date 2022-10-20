@@ -1,9 +1,13 @@
 import styles from "../styles/Generate.module.css"
+import Link from "next/link"
 
 const Generate = () => {
     return (
         <div className={styles.generate}>
-            <h1>Capt.io</h1>
+            <div className={styles.header}>
+                <Link href="/"><button>Back</button></Link>
+                <h1>Capt.io</h1>
+            </div>
             <div className={styles.inputBox}>
                 <div style={{padding:0}}>
                     <label for="upload-file"><img src="images/upload.svg"/></label>

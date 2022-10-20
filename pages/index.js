@@ -1,14 +1,15 @@
 import styles from '../styles/Home.module.css'
 import Footer from './footer'
 import Link from 'next/link'
+import Nav from '../components/navbar'
 
 export default function Home() {
-
-  
 
   return (
     <div className={styles.container}>
       <section className={`${styles.main} ${styles.base}`}>
+        <div className={styles.outer}>
+        <Nav/>
         <div className={styles.landing}>
         <div>
           <h1 className={`${styles.left}`}>Capt.io</h1>
@@ -16,6 +17,7 @@ export default function Home() {
           <Link href="generate"><button>Generate</button></Link>
         </div>
         <img src="images/cuate.png"/>
+        </div>
         </div>
       </section>
       <section className={`${styles.working} ${styles.base}`}>

@@ -61,3 +61,23 @@
     background-color: #CCCCCC;
     height: 50vh;
 }
+
+.header{
+    display: flex;
+    flex-direction: row;
+    width: 80vw;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header h1{
+    justify-self: center;
+}
+
+.header button{
+    background: transparent;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: white;
+}
