@@ -1,10 +1,9 @@
 import styles from "../styles/Generate.module.css"
 import Link from "next/link"
-import storage from "../firebase/db"
+import {storage} from "../firebase/db"
 import {ref} from "firebase/storage"
 import { useState } from "react"
 import { uploadBytes } from "firebase/storage"
-import Image from "next/image"
 
 const Generate = () => {
 
