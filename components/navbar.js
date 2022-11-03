@@ -5,7 +5,7 @@ import { signOut } from "firebase/auth"
 import { useRouter } from "next/router"
 
 const Nav = () => {
-
+        
         const router = useRouter();
         const handleLogOut = () => {
             signOut(auth).then(
