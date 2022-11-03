@@ -3,6 +3,8 @@ import styles from "../styles/Auth.module.css"
 import { auth } from "../firebase/db";
 import {createUserWithEmailAndPassword, signInWithEmailAndPassword} from "firebase/auth"
 import { useRouter } from "next/router";
+import {collection,addDoc} from "firebase/firestore";
+import { firestore } from "../firebase/db";
 
 const Auth = () => {
 
@@ -28,8 +30,10 @@ const Auth = () => {
     const handleSignup = () => {
         console.log(details)
         createUserWithEmailAndPassword(auth,details.email,details.password)
-        .then( (userCredential) => {
-            const user  = userCredential.user;
+        .then( async (userCredential) => {
+            const user  = userCredential.user.uid;
+            const ref = collection(firestore,"preferences")
+            await addDoc(ref,{userId:user,language:"English"})
             router.push('/')
         }).catch( (error) => {
             console.log(error)
