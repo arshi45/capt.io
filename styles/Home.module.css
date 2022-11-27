@@ -18,13 +18,19 @@
 
 .landing button{
   margin: none;
-  background-color: #5CC793;
+  background-color: rgb(78, 255, 190,.7);
   border-style:none;
   font-size:2rem;
   padding:8px 40px;
   border-radius:8px;
   color:white;
   cursor:pointer;
+  transition: .2s;
+}
+
+.landing button:hover{
+  transform: scale(1.01);
+  box-shadow:0 10px 25px 2px rgb(78, 255, 190,.7);
 }
 
 .outer{

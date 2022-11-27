@@ -1,19 +1,28 @@
 .auth{
     background-image: url("../public/images/Rectangle.png");
-    height: 100vh;
+    height: 92vh;
+    margin: 2vw;
     background-size: cover;
+    padding:2rem;
     text-align: center;
+    border-radius: 16px;
     display: flex;
+    justify-content: center;
     align-items: center;
+    font-family:sans-serif
 }
 
 .authForm{
     display:flex;
     flex-direction:column;
-    justify-content: center;
     align-items: baseline;
-    width:25vw;
-    margin:auto;
+    padding: 2vw;
+    width:18vw;
+    border-radius: 16px;
+    background: rgba( 255, 255, 255, 0.3 );
+    backdrop-filter: blur(4.5px);
+    box-shadow: 0 8px 32px 0rgba( 255, 255, 255, 0.3 );
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
 }
 
 .link{
@@ -28,22 +37,46 @@
 
 .authForm button{
     align-self: center;
-    font-size: 1.8rem;
+    font-size: 1.5rem;
+    border: none;
+    padding:4px 8px;
+    margin-bottom: 8px;
+    border-radius: 8px;
     cursor:pointer;
+    color:white;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    background-color: rgb(223, 121, 148,.6);
+    transition: .3s;
+    box-shadow: 0 5px 15px 5px rgba(223,121,148,.6);
+}
+
+.authForm button:hover{
+    transform: scale(1.1);
+    background-color: rgb(250, 216, 187,.6);
+    box-shadow: 0 5px 15px 5px rgb(250, 216, 187,.6);
+    ;
 }
 
 
 .authForm input{
-    width: 25vw;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     margin:5px 0 15px 0;
     border-radius:10px;
     border-style: solid;
     border-color:gray;
     padding:5px;
+    border-style: solid;
+    border-color: rgba( 248, 248, 248, 0.88 );
+    border-width: 1px;
+    transition: .2s;
+}
+
+.authForm input:focus{
+
+    outline:2px solid rgb(180, 100, 150,.3);
 }
 
 .authForm label{
-    font-size: 1.7rem;
+    font-size: 1.3rem;
     color:white;
 }
