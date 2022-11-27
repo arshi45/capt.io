@@ -6,7 +6,7 @@ const nextConfig = {
       {
         source: '/',
         destination: '/auth',
-        permanent: true,
+        permanent: false,
       },
     ]
   },
@@ -16,4 +16,4 @@ const nextConfig = {
   }
 }
 
-module.exports = nextConfig
+export default nextConfig

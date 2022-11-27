@@ -2,8 +2,22 @@ import styles from '../styles/Home.module.css'
 import Footer from './footer'
 import Link from 'next/link'
 import Nav from '../components/navbar'
+import { useEffect } from 'react'
+import { Auth, onAuthStateChanged } from 'firebase/auth'
+import { auth } from '../firebase/db'
+import { useRouter } from 'next/router'
 
 export default function Home() {
+
+  const router = useRouter();
+
+  useEffect(() => {
+    onAuthStateChanged(auth,(user) => {
+      if(!user){
+        router.push("/auth")
+      }
+    },[])
+  })
 
   return (
     <div className={styles.container}>
