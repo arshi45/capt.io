@@ -73,6 +73,10 @@
   font-size: 4rem;
 }
 
-.about Image{
+.about img{
   border-radius:50%;
+  height: 15vw;
+  width:  15vw;
+  object-fit: cover;
 }
+

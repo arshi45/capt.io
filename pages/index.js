@@ -44,19 +44,19 @@ export default function Home() {
         <h1>Our Team</h1>
         <div className={styles.names}>
         <div className={styles.photo}>
-          <img alt='Anubhav'/>
+          <img alt='Anubhav' src='images/anubhav.jpeg'/>
           <p>Anubhav Chawla</p>
         </div>
         <div className={styles.photo}>
-          <img alt='Arshdeep'/>
+          <img alt='Arshdeep' src='images/arsh.jpg'/>
           <p>Arshdeep Singh</p>
         </div>
         <div className={styles.photo}>
-          <img alt='Gurnoor'/>
+          <img alt='Gurnoor' src='images/gurnoor.png'/>
           <p>Gurnoor Singh</p>
         </div>
         <div className={styles.photo}>
-          <img alt='Nikhil'/>
+          <img alt='Nikhil' src='images/nikhil.jpg'/>
           <p>Nikhil Bakshi</p>
         </div>
         </div>
